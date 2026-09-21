@@ -1,0 +1,27 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    flex-direction: column;
+    background-color: aliceblue;
+    color: darkblue;
+}
+
+body.dark
+{
+    background-color: black;
+    color: gold;
+}
+
+body.dark a
+{
+    color: gold;
+}
+
+a
+{
+    color: darkblue;
+    text-decoration: none;
+}
