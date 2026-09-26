@@ -25,3 +25,59 @@ a
     color: darkblue;
     text-decoration: none;
 }
+
+nav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.switch input
+{
+    display: none;
+}
+
+.switch 
+{
+    display: inline-block;
+    position: fixed;
+    width: 60px;
+    height: 30px;
+    right: 20px;
+    bottom: 20px;
+}
+
+.slider
+{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #D12C26;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.slider::before
+{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 5px;
+    left: 3px;
+    transition: 0.4s;
+}
+
+input:checked + .slider
+{
+    background-color: green;
+}
+
+input:checked + .slider::before
+{
+    transform: translateX(30px);
+}
