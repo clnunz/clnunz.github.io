@@ -1,83 +1,82 @@
-body
-{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100vh;
-    flex-direction: column;
-    background-color: aliceblue;
-    color: darkblue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body.dark
-{
-    background-color: black;
-    color: gold;
+body {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    background-color: #0d0d0d;
+    color: #c9c9c9;
+    min-height: 100vh;
 }
 
-body.dark a
-{
-    color: gold;
-}
-
-a
-{
-    color: darkblue;
-    text-decoration: none;
-}
-
-nav
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-
-.switch input
-{
-    display: none;
-}
-
-.switch 
-{
-    display: inline-block;
+nav {
     position: fixed;
-    width: 60px;
-    height: 30px;
-    right: 20px;
-    bottom: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 24px;
+    background-color: #0d0d0d;
+    border-bottom: 1px solid #222;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 0.85rem;
 }
 
-.slider
-{
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: #D12C26;
-    border-radius: 30px;
-    transition: 0.4s;
+nav div {
+    display: flex;
+    gap: 4px;
 }
 
-.slider::before
-{
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    bottom: 5px;
-    left: 3px;
-    transition: 0.4s;
+.row-2 {
+    padding-left: 1em;
 }
 
-input:checked + .slider
-{
-    background-color: green;
+.row-3 {
+    padding-left: 3em;
 }
 
-input:checked + .slider::before
-{
-    transform: translateX(30px);
+
+nav span {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    color: #444;
+}
+
+#node-root {
+    opacity: 1;
+    color: #c9c9c9;
+}
+
+nav span.active {
+    opacity: 1;
+    color: #ffffff;
+}
+
+main {
+    padding-top: 60px;
+}
+
+section {
+    min-height: 100vh;
+    padding: 80px 48px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+section p {
+    color: #666;
+}
+
+body.dark {
+    background-color: #000;
+    color: #c9c9c9;
 }

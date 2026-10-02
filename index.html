@@ -5,19 +5,33 @@
             <title> My landing page </title>
         </head>
         <body> 
-            <h1> Claudio Hernandez </h1>
-            <label class="switch">
-                <input type="checkbox" id="theme_toggle">
-                <span class="slider"></span>
-            </label>
-            <nav> 
-                <a href="about.html"> About me </a>
-                <a href="cv.html"> CV </a>
-                <a href="projects.html"> Projects </a>
-                <a href="contact.html"> Contact </a>
-            </nav>
-        <script src = "logic.js"></script>
+             <nav> 
+                <div class="row-1">
+                    <span id="node-root">claudiohernandez</span>
+                </div>
+                <div class="row-2">
+                    <span id="node-about">├── about</span>
+                    <span id="node-profile">── profile</span>
+                    <span id="node-cv">── cv</span>
+                </div>
+                <div class="row-3">
+                    <span id="node-projects">└── projects</span>
+                    <span id="node-p1">── p1</span>
+                    <span id="node-p2">── p2</span>
+                    <span id="node-p3">── p3</span>
+                </div>
+             </nav>
+
+             <main>
+                <section id="root"><h2>Claudio Hernandez</h2><p>Data & ML Engineer</p></section>
+                <section id="about"><h2>About</h2><p>placeholder</p></section>
+                <section id="profile"><h2>Profile</h2><p>placeholder</p></section>
+                <section id="cv"><h2>CV</h2><p>placeholder</p></section>
+                <section id="projects"><h2>Projects</h2><p>placeholder</p></section>
+                <section id="p1"><h2>Project 1</h2><p>placeholder</p></section>
+                <section id="p2"><h2>Project 2</h2><p>placeholder</p></section>
+                <section id="p3"><h2>Project 3</h2><p>placeholder</p></section>
+             </main>
+            <script src="logic.js"></script>
         </body>
     </html>
-        
-        
